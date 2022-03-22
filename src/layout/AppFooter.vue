@@ -103,9 +103,7 @@ export default {
 
       db.collection("newsletter")
         .add(order)
-        .then(() => {
-          console.log("Done");
-        });
+        .then(() => {});
     },
   },
 };

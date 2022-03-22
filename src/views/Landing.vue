@@ -808,9 +808,7 @@ export default {
 
       db.collection("orders")
         .add(order)
-        .then(() => {
-          console.log("Done");
-        });
+        .then(() => {});
     },
   },
 };
