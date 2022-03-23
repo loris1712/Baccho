@@ -130,7 +130,13 @@ export default {
   },
 
   mounted() {
+    var currentUrl = window.location.pathname;
+    console.log(this.$route.name);
     window.addEventListener("scroll", this.updateScroll);
+    if (this.$route.name == "about") {
+      document.querySelector(".navbar-main").classList.remove("change_color2");
+      document.querySelector(".navbar-main").classList.add("change_color");
+    }
   },
 
   methods: {

@@ -1,6 +1,7 @@
 {
-  "name": "vue-argon-design-system",
+  "name": "Baccho",
   "version": "0.1.0",
+  "author": "Baccho",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -27,7 +28,7 @@
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-plugin-pwa": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.14.1",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.6"
   }
