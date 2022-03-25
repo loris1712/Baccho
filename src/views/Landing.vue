@@ -72,6 +72,7 @@
             style="background: transparent; width: 108%; height: 100%; border-radius: 0;"
           ></span>
         </div>
+
         <div class="container shape-container d-flex containerB">
           <div class="col px-0">
             <div class="row">
