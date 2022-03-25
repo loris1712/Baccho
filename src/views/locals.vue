@@ -2,23 +2,29 @@
   <div>
     <div class="position-relative">
       <!-- shape Hero -->
-      <section class="section-shaped my-0">
+      <section
+        class="section-shaped my-0 firstSezWeb"
+        style="background: #7474BF;
+    background: -webkit-linear-gradient(to bottom, #348AC7, #7474BF);
+    background: linear-gradient(to bottom, rgb(176 10 146 / 15%),  #ffffff);"
+      >
         <div
           class="shape shape-style-1 shape-default shape-skew"
-          style="background-image: url(img/theme/img_8.jpg); background-position: center;"
+          style=" background-position: center; background: white;"
         >
           <span
-            style="background: rgb(0 0 0 / 25%); width: 108%; height: 100%; border-radius: 0;"
+            style="background: transparent; width: 108%; height: 100%; border-radius: 0;"
           ></span>
         </div>
-        <div class="container shape-container d-flex">
+        <div class="container shape-container d-flex containerB">
           <div class="col px-0">
             <div class="row">
               <div class="col-lg-6">
-                <h1 class="display-3  text-white">
-                  <span>Hai un ristorante?</span> Baccho fa proprio al caso tuo
+                <h1 class="">
+                  Hai un <span style="color: #b00a92;">ristorante</span>? Baccho
+                  fa al caso tuo
                 </h1>
-                <p class="lead  text-white">
+                <p class="">
                   Grazie a Baccho puoi ordinare la tua spesa genuina dal tuo
                   smartphone e riceverla direttamente al ristorante o in
                   pizzeria. Tutti alimenti coltivati naturalmente nelle terre
@@ -35,6 +41,67 @@
                   </base-button>
                 </div>
               </div>
+              <div class="col-lg-6">
+                <div class="image"></div>
+                <div class="image2"></div>
+                <div class="image3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-shaped my-0 firstSezApp"
+        style="background: #7474BF;
+    background: -webkit-linear-gradient(to bottom, #348AC7, #7474BF);
+    background: linear-gradient(to bottom, rgb(176 10 146 / 15%),  #ffffff);"
+      >
+        <div
+          class="shape shape-style-1 shape-default shape-skew"
+          style=" background-position: center; background: white;"
+        >
+          <span
+            style="background: transparent; width: 108%; height: 100%; border-radius: 0;"
+          ></span>
+        </div>
+        <div class="container shape-container d-flex containerB">
+          <div class="col px-0">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="image"></div>
+              </div>
+              <div class="col-lg-6">
+                <h1 class="">
+                  Hai un <span style="color: #b00a92;">ristorante</span>? Baccho
+                  fa al caso tuo
+                </h1>
+                <p class="">
+                  Grazie a Baccho puoi ordinare la tua spesa genuina dal tuo
+                  smartphone e riceverla direttamente al ristorante o in
+                  pizzeria. Tutti alimenti coltivati naturalmente nelle terre
+                  del Cilento e della costiera Amalfitana.
+                </p>
+                <div class="btn-wrapper">
+                  <base-button
+                    tag="a"
+                    href="#ordinaFamiglia"
+                    class="mb-3 mb-sm-0 defaultBtn"
+                    icon="fa fa-plus"
+                  >
+                    Ordina ora
+                  </base-button>
+                  <base-button
+                    tag="a"
+                    href="#ordinaFamiglia"
+                    class="mb-3 mb-sm-0 secondDefaultBtn"
+                    type="white"
+                    icon="fa fa-info"
+                  >
+                    Scopri di più
+                  </base-button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -44,7 +111,7 @@
 
     <section class="section section-lg">
       <div class="container">
-        <div class="row row-grid align-items-center">
+        <div class="row row-grid">
           <div class="col-md-6 order-md-2">
             <div class="d-flex px-3 mb-3">
               <div>
@@ -52,17 +119,21 @@
                   name="ni ni-delivery-fast"
                   size="lg"
                   class="bg-gradient-white"
-                  color="primary"
                   shadow
                   rounded
                 ></icon>
               </div>
               <div class="pl-4">
-                <h4 class="display-3">Dettagli sull'ordine</h4>
+                <h4
+                  class="display-3"
+                  style="font-weight: 700; color: rgb(52 52 52);"
+                >
+                  Dettagli sull'ordine
+                </h4>
               </div>
             </div>
 
-            <ul class="list-unstyled mt-5">
+            <ul class="list-unstyled mt-5" style="padding-left: 2rem;">
               <li class="py-2">
                 <div
                   class="d-flex align-items-center"
@@ -95,41 +166,39 @@
                   name="ni ni-delivery-fast"
                   size="lg"
                   class="bg-gradient-white"
-                  color="primary"
                   shadow
                   rounded
                 ></icon>
               </div>
               <div class="pl-4">
-                <h4 class="display-3">Ordina ora per la tua famiglia</h4>
+                <h4
+                  class="display-3"
+                  style="font-weight: 700; color: rgb(52 52 52);"
+                >
+                  Ordina per il tuo locale
+                </h4>
               </div>
             </div>
-            <card gradient="secondary" shadow body-classes="p-lg-4">
+            <card
+              style="border-radius: 0px; background: transparent; border: 0;"
+            >
               <base-input
                 class=""
                 placeholder="Nome e cognome"
-                addon-left-icon="ni ni-user-run"
                 name="name1"
                 v-model="name1"
               >
               </base-input>
-              <base-input
-                placeholder="Email"
-                addon-left-icon="ni ni-email-83"
-                name="email1"
-                v-model="email1"
-              >
+              <base-input placeholder="Email" name="email1" v-model="email1">
               </base-input>
               <base-input
                 placeholder="Indirizzo di consegna e numero civico"
-                addon-left-icon="ni ni-pin-3"
                 name="address1"
                 v-model="address1"
               >
               </base-input>
               <base-input
                 placeholder="Cellulare"
-                addon-left-icon="ni ni-mobile-button"
                 name="cellular1"
                 v-model="cellular1"
               >
@@ -163,7 +232,6 @@
               <base-input
                 placeholder="Orario di consegna"
                 type="time"
-                addon-left-icon="ni ni-watch-time"
                 name="time1"
                 v-model="time1"
               >
@@ -193,13 +261,27 @@
       </div>
     </section>
     <section class="section section-lg pt-0">
-      <div class="container">
-        <card gradient="default" no-body shadow-size="lg" class="border-0">
+      <div
+        class="container"
+        style="margin-top: 8rem;
+    margin-bottom: 5rem;"
+      >
+        <card
+          no-body
+          shadow-size="lg"
+          class="border-0"
+          style="background-color: rgb(218 84 194 / 50%) !important;"
+        >
           <div class="p-5">
             <div class="row align-items-center">
               <div class="col-lg-8">
-                <h3 class="text-white">Vuoi diventare un rider di Baccho?</h3>
-                <p class="lead text-white mt-3">
+                <h3
+                  style="color: #b00a92 !important;
+    font-weight: 700;"
+                >
+                  Vuoi diventare un rider di Baccho?
+                </h3>
+                <p class="lead mt-3" style="color: #b00a92 !important;">
                   Contattaci e scopri come diventare un rider di Baccho.
                 </p>
               </div>
@@ -210,6 +292,13 @@
                   type="white"
                   block
                   size="lg"
+                  style="border-radius: 25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    text-transform: none;"
                 >
                   Contattaci
                 </base-button>
@@ -250,7 +339,6 @@
               gradient="white"
               shadow
               round
-              color="warning"
             ></icon>
             <h5 class="text-white mt-3">Seleziona i prodotti</h5>
           </div>
@@ -261,7 +349,6 @@
               gradient="white"
               shadow
               round
-              color="warning"
             ></icon>
             <h5 class="text-white mt-3">Conferma l'ordine</h5>
           </div>
@@ -272,7 +359,6 @@
               gradient="white"
               shadow
               round
-              color="warning"
             ></icon>
             <h5 class="text-white mt-3">Entro 24 ore saremo da te</h5>
           </div>
@@ -609,13 +695,275 @@ export default {
   letter-spacing: -0.3px;
 }
 
+@media (max-width: 1023px) {
+  .riderDiv {
+    text-align: center;
+  }
+
+  .firstSezApp {
+    display: inherit;
+  }
+
+  .firstSezWeb {
+    display: none;
+  }
+
+  .thirdSezApp {
+    display: inherit;
+  }
+
+  .thirdSezWeb {
+    display: none;
+  }
+
+  .fourthSezApp {
+    display: inherit;
+    text-align: center;
+  }
+
+  .fourthSezWeb {
+    display: none;
+  }
+
+  .thirdSezDivApp {
+    text-align: center;
+  }
+
+  .thirdSezDivApp h3 {
+    font-size: 36px;
+  }
+
+  .thirdSezDivApp ul {
+    padding-left: 4rem !important;
+  }
+
+  .sixthSezWeb h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .sixthSezWeb h5 {
+    font-size: 18px;
+  }
+
+  .sixthSezWeb p {
+    font-size: 16px;
+    color: #666666;
+  }
+
+  .seventhSezWeb h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2b2b2b;
+  }
+
+  .seventhSezWeb p {
+    font-size: 16px;
+    color: #666666;
+  }
+
+  .firstSezApp .containerB {
+    padding: 3rem;
+    padding-top: 12rem !important;
+    max-width: none;
+    text-align: center;
+    padding-bottom: 0rem !important;
+  }
+
+  .containerB h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2b2b2b;
+  }
+
+  .containerB p {
+    font-size: 16px;
+    color: #666666;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .secondDefaultBtn {
+    display: none;
+  }
+
+  .image {
+    width: 30vh;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+    background-image: url("https://img.freepik.com/free-photo/buddha-bowl-dish-with-vegetables-legumes-top-view_1150-42589.jpg?t=st=1648036953~exp=1648037553~hmac=2af7fd38914804447465654639094671e42579e67617616e6dcbbf026564bb54&w=1060");
+  }
+}
+
+@media (min-width: 1024px) {
+  .firstSezApp {
+    display: none;
+  }
+
+  .firstSezWeb {
+    display: inherit;
+  }
+
+  .thirdSezWeb {
+    display: inherit;
+  }
+
+  .thirdSezApp {
+    display: none;
+  }
+
+  .fourthSezWeb {
+    display: inherit;
+  }
+
+  .fourthSezApp {
+    display: none;
+  }
+
+  .sixthSezWeb h2 {
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .seventhSezWeb h2 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #2b2b2b;
+  }
+
+  .seventhSezWeb p {
+    font-size: 20px;
+    color: #666666;
+  }
+
+  .containerB {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    max-width: none;
+  }
+
+  .containerB h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #2b2b2b;
+    line-height: 5rem;
+    width: 70%;
+  }
+
+  .containerB p {
+    font-size: 20px;
+    color: #666666;
+    width: 70%;
+    line-height: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .image {
+    width: 75vh;
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+    background-image: url("https://img.freepik.com/free-photo/buddha-bowl-dish-with-vegetables-legumes-top-view_1150-42589.jpg?t=st=1648036953~exp=1648037553~hmac=2af7fd38914804447465654639094671e42579e67617616e6dcbbf026564bb54&w=1060");
+  }
+
+  .image2 {
+    position: absolute;
+    top: 69%;
+    width: 25vh;
+    height: 25vh;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+    background-image: url("https://img.freepik.com/free-photo/tomatoes-basil-mozzarella_144627-15404.jpg?t=st=1648037115~exp=1648037715~hmac=5b247bef0b586f7e905d3ce88e7bf07774b3370e13492467f7046bd03432fef9&w=1380");
+  }
+
+  .image3 {
+    position: absolute;
+    top: 1%;
+    width: 25vh;
+    height: 25vh;
+    left: 71%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+    background-image: url("https://img.freepik.com/free-photo/tasty-fresh-appetizing-italian-food-ingredients-dark-background_1220-1741.jpg?t=st=1648036893~exp=1648037493~hmac=89b13d8dd64d3ced908b01d572570b67e0220ef6c08941799e912680ba19aa16&w=1060");
+  }
+}
+
 .defaultBtn {
   background-color: #b00a92;
   border-color: #b00a92;
+  color: white;
+  border-radius: 25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-transform: none;
+  font-size: 16px;
 }
 
 .defaultBtn:hover {
-  background-color: #71077b;
-  border-color: #71077b;
+  background: #b00a92;
+  border-color: #b00a92;
+}
+
+.secondDefaultBtn {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin-left: 1rem;
+  text-transform: none;
+  font-size: 16px;
+}
+
+.secondDefaultBtn:hover {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin-left: 1rem;
+}
+
+.cardImage {
+  width: 100%;
+  height: 38vh;
+  border-radius: 30px;
+  background-position: center;
+  background-size: cover;
+}
+
+.cardText {
+  padding: 1.5rem;
+  background: white;
+  position: absolute;
+  width: 100%;
+  /* border-radius: 30px; */
+  border-top-left-radius: 30px;
+  top: 77%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(176 10 146);
+  margin: 0;
+}
+
+.cardTitle2 {
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
 }
 </style>

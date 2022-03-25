@@ -153,7 +153,26 @@ export default {
 };
 </script>
 <style>
+.form-control {
+  color: #000000;
+  appearance: none;
+  background-image: none;
+  border: 1px solid #cad1d7;
+  display: block;
+  /* font-size: 1rem; */
+  line-height: 1.5rem;
+  font-weight: 400;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 4px;
+  padding: 14px;
+}
+
 .form-control:focus {
-  border-color: transparent;
+  border-bottom: 3px solid #b00a92;
 }
 </style>

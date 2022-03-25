@@ -3,7 +3,9 @@
     <section class="section-profile-cover section-shaped my-0">
       <div
         class="shape shape-style-1 shape-primary shape-skew alpha-4"
-        style="background-image: url(img/theme/foto7.jpg); background-position: center;"
+        style="background: #7474BF;
+    background: -webkit-linear-gradient(to bottom, #348AC7, #7474BF);
+    background: linear-gradient(to bottom, rgb(176 10 146 / 15%),  #ffffff);"
       >
         <span></span>
         <span></span>
@@ -14,7 +16,7 @@
         <span></span>
       </div>
     </section>
-    <section class="section section-skew">
+    <section class="section section-skew" style="padding-top: 0;">
       <div class="container">
         <card shadow class="card-profile mt--300" no-body>
           <div class="px-4">
@@ -34,7 +36,7 @@
               >
                 <div class="card-profile-actions py-4 mt-lg-0">
                   <a href="https://www.facebook.com/Baccho.It"
-                    ><base-button size="sm" class="mr-4 defaultBtn"
+                    ><base-button size="sm" class="mr-4"
                       >Facebook</base-button
                     ></a
                   >

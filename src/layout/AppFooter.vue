@@ -1,6 +1,6 @@
 <template>
   <footer class="footer has-cards">
-    <div class="container">
+    <div class="container containerFooter">
       <div class="row row-grid align-items-center my-md">
         <div class="col-lg-6">
           <h3 class="font-weight-light mb-2" style="color: #b00a92;">
@@ -13,7 +13,6 @@
         <div class="col-lg-6 text-lg-center btn-wrapper">
           <base-input
             placeholder="Inserisci la tua email"
-            addon-left-icon="ni ni-email-83"
             name="email"
             v-model="email"
           >
@@ -119,6 +118,10 @@ export default {
     -webkit-box-pack: center !important;
     -ms-flex-pack: center !important;
     justify-content: center !important;
+  }
+
+  .containerFooter {
+    text-align: center;
   }
 }
 

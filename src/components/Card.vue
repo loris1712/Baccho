@@ -68,6 +68,15 @@ export default {
 };
 </script>
 <style>
+@media (max-width: 1023px) {
+  .card {
+    margin-bottom: 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .card {
   border-radius: 30px;
 }

@@ -3,7 +3,7 @@
     <div class="position-relative">
       <!-- shape Hero background-image: url(img/theme/img_12.jpg); -->
       <section
-        class="section-shaped my-0"
+        class="section-shaped my-0 firstSezWeb"
         style="background: #7474BF;
     background: -webkit-linear-gradient(to bottom, #348AC7, #7474BF);
     background: linear-gradient(to bottom, rgb(176 10 146 / 15%),  #ffffff);"
@@ -52,6 +52,60 @@
                 <div class="image"></div>
                 <div class="image2"></div>
                 <div class="image3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-shaped my-0 firstSezApp"
+        style="background: #7474BF;
+    background: -webkit-linear-gradient(to bottom, #348AC7, #7474BF);
+    background: linear-gradient(to bottom, rgb(176 10 146 / 15%),  #ffffff);"
+      >
+        <div
+          class="shape shape-style-1 shape-default shape-skew"
+          style=" background-position: center; background: white;"
+        >
+          <span
+            style="background: transparent; width: 108%; height: 100%; border-radius: 0;"
+          ></span>
+        </div>
+        <div class="container shape-container d-flex containerB">
+          <div class="col px-0">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="image"></div>
+              </div>
+              <div class="col-lg-6">
+                <h1 class="">
+                  Consengiamo la tua spesa genuina a
+                  <span style="color: #b00a92;">casa</span>
+                </h1>
+                <p class="">
+                  Frutta, verdura e pane fresco, vino, olio, tutto dalle nostre
+                  terre!
+                </p>
+                <div class="btn-wrapper">
+                  <base-button
+                    tag="a"
+                    href="#ordinaFamiglia"
+                    class="mb-3 mb-sm-0 defaultBtn"
+                    icon="fa fa-plus"
+                  >
+                    Ordina ora
+                  </base-button>
+                  <base-button
+                    tag="a"
+                    href="#ordinaFamiglia"
+                    class="mb-3 mb-sm-0 secondDefaultBtn"
+                    type="white"
+                    icon="fa fa-info"
+                  >
+                    Scopri di più
+                  </base-button>
+                </div>
               </div>
             </div>
           </div>
@@ -107,7 +161,7 @@
                 <card class="border-0" hover shadow body-classes="">
                   <div
                     class="cardImage"
-                    style="background-image: url(https://img.freepik.com/free-photo/side-view-vegetables-with-spices_141793-2612.jpg?t=st=1647903790~exp=1647904390~hmac=a90b299f45ea05112d4f8d0024dd66f5e41b22dfb3e1ba65a666eb5dd222e978&w=1060)"
+                    style="background-image: url(https://img.freepik.com/free-photo/healthy-ingredients-kitchen-table-spaghetti-olive-oil-t_1220-819.jpg?t=st=1648036953~exp=1648037553~hmac=ba1e452d91f86a6923a02049e5bdbbfae9a9b0e4d508adf538195eae3fdc014b&w=1060)"
                   ></div>
                   <div class="cardText">
                     <h6 class="cardTitle">Ordina olio di qualità</h6>
@@ -121,7 +175,7 @@
       </div>
     </section>
     <section
-      class="section section-lg"
+      class="section section-lg thirdSezWeb"
       style="padding-left: 10rem;
     padding-right: 10rem;"
     >
@@ -198,8 +252,83 @@
         </div>
       </div>
     </section>
+
+    <section class="section section-lg thirdSezApp">
+      <div class="container">
+        <div class="row row-grid align-items-center">
+          <div class="col-md-6 order-md-2">
+            <img
+              src="img/theme/flyer_baccho_2.png"
+              class="img-fluid floating"
+            />
+          </div>
+          <div class="col-md-6 order-md-1">
+            <div class="pr-md-5 thirdSezDivApp">
+              <icon
+                name="ni ni-air-baloon"
+                class="mb-5"
+                size="lg"
+                type="success"
+                shadow
+                rounded
+              ></icon>
+              <h3
+                style="font-weight: 700; font-size: 40px; color: rgb(52 52 52);"
+              >
+                Ordina con Baccho
+              </h3>
+              <p style="color: #666666;">
+                Il modo più semplice per ordinare cibo genuino, di qualità e
+                riceverlo direttamente a casa.
+              </p>
+              <ul class="list-unstyled mt-5">
+                <li class="py-2">
+                  <div class="d-flex align-items-center">
+                    <badge
+                      type="success"
+                      circle
+                      class="mr-3"
+                      icon="ni ni-like-2"
+                    ></badge>
+                    <h6 class="mb-0" style="color: #666666;">
+                      Facile da utilizzare.
+                    </h6>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="d-flex align-items-center">
+                    <badge
+                      type="success"
+                      circle
+                      class="mr-3"
+                      icon="ni ni-check-bold"
+                    ></badge>
+                    <h6 class="mb-0" style="color: #666666;">
+                      Cibo genuino controllato.
+                    </h6>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="d-flex align-items-center">
+                    <badge
+                      type="success"
+                      circle
+                      class="mr-3"
+                      icon="ni ni-delivery-fast"
+                    ></badge>
+                    <h6 class="mb-0" style="color: #666666;">
+                      In 24 ore siamo da te.
+                    </h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section
-      class="section section section-shaped my-0 overflow-hidden"
+      class="section section section-shaped my-0 overflow-hidden fourthSezWeb"
       id="ordinaFamiglia"
     >
       <div
@@ -300,28 +429,20 @@
               <base-input
                 class=""
                 placeholder="Nome e cognome"
-                addon-left-icon="ni ni-user-run"
                 name="name1"
                 v-model="name1"
               >
               </base-input>
-              <base-input
-                placeholder="Email"
-                addon-left-icon="ni ni-email-83"
-                name="email1"
-                v-model="email1"
-              >
+              <base-input placeholder="Email" name="email1" v-model="email1">
               </base-input>
               <base-input
                 placeholder="Indirizzo di consegna e numero civico"
-                addon-left-icon="ni ni-pin-3"
                 name="address1"
                 v-model="address1"
               >
               </base-input>
               <base-input
                 placeholder="Cellulare"
-                addon-left-icon="ni ni-mobile-button"
                 name="cellular1"
                 v-model="cellular1"
               >
@@ -355,7 +476,146 @@
               <base-input
                 placeholder="Orario di consegna"
                 type="time"
-                addon-left-icon="ni ni-watch-time"
+                name="time1"
+                v-model="time1"
+              >
+              </base-input>
+              <base-input class="mb-4">
+                <textarea
+                  class="form-control form-control-alternative"
+                  rows="4"
+                  cols="80"
+                  placeholder="Aggiungi ulteriori informazioni"
+                  name="note1"
+                  v-model="note1"
+                ></textarea>
+              </base-input>
+              <base-button
+                type="default defaultBtn"
+                round
+                block
+                size="lg"
+                @click="sendOrder"
+              >
+                Conferma ordine
+              </base-button>
+            </card>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section section section-shaped my-0 overflow-hidden fourthSezApp"
+      id="ordinaFamiglia"
+    >
+      <div
+        class="shape shape-style-1 bg-gradient-warning shape-skew"
+        style="background-image: url(img/theme/gallery_09.jpg)!important; height: 100%;"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="container py-0" style="max-width: none;">
+        <div class="row row-grid">
+          <div class="col-lg-6 order-lg-1 ml-lg-auto">
+            <div class="position-relative pl-md-5">
+              <div class="pr-md-5">
+                <div class="">
+                  <div class="">
+                    <h4 class="display-3 text-white">Dettagli sull'ordine</h4>
+                  </div>
+                </div>
+                <ul class="list-unstyled mt-3" style="text-align: center;">
+                  <li class="py-2">
+                    <div class="align-items-center">
+                      <h6 class="mb-0 text-white">
+                        Spedizione gratuita per gli ordini superiori ai €25.
+                      </h6>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="align-items-center">
+                      <h6 class="mb-0 text-white">
+                        Costo di spedizone di €2,50 per gli ordini inferiori a
+                        €20.
+                      </h6>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="align-items-center">
+                      <h6 class="mb-0 text-white">Pagamento alla consegna.</h6>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="d-flex mb-3">
+              <div class="">
+                <h4 class="display-3 text-white">
+                  Ordina ora per la tua famiglia
+                </h4>
+              </div>
+            </div>
+            <card
+              style="border-radius: 0px; background: transparent; border: 0;"
+            >
+              <base-input
+                class=""
+                placeholder="Nome e cognome"
+                name="name1"
+                v-model="name1"
+              >
+              </base-input>
+              <base-input placeholder="Email" name="email1" v-model="email1">
+              </base-input>
+              <base-input
+                placeholder="Indirizzo di consegna e numero civico"
+                name="address1"
+                v-model="address1"
+              >
+              </base-input>
+              <base-input
+                placeholder="Cellulare"
+                name="cellular1"
+                v-model="cellular1"
+              >
+              </base-input>
+
+              <multiselect
+                v-model="value"
+                :options="options"
+                :multiple="true"
+                :close-on-select="false"
+                :clear-on-select="false"
+                :preserve-search="true"
+                placeholder="Seleziona il cibo desiderato"
+                :custom-label="customLabel"
+                label="name"
+                track-by="name"
+                :preselect-first="false"
+                style="margin-bottom: 1rem; border: 0.0625rem solid rgba(0, 0, 0, 0.05);"
+              >
+                <template
+                  slot="selection"
+                  slot-scope="{ values, search, isOpen }"
+                  ><span
+                    class="multiselect__single"
+                    v-if="values.length &amp;&amp; !isOpen"
+                    >{{ values.length }} prodotti selezionati</span
+                  ></template
+                >
+              </multiselect>
+
+              <base-input
+                placeholder="Orario di consegna"
+                type="time"
                 name="time1"
                 v-model="time1"
               >
@@ -397,12 +657,9 @@
           style="background-color: rgb(218 84 194 / 50%) !important;"
         >
           <div class="p-5">
-            <div class="row align-items-center">
+            <div class="row align-items-center riderDiv">
               <div class="col-lg-8">
-                <h3
-                  style="color: #b00a92 !important;
-    font-weight: 700;"
-                >
+                <h3 style="color: #b00a92 !important; font-weight: 700;">
                   Vuoi diventare un rider di Baccho?
                 </h3>
                 <p class="lead mt-3" style="color: #b00a92 !important;">
@@ -432,7 +689,7 @@
         </card>
       </div>
     </section>
-    <section class="section section-shaped my-0 overflow-hidden">
+    <section class="section section-shaped my-0 overflow-hidden sixthSezWeb">
       <div
         class="shape shape-style-3 shape-skew"
         style="background-image: url(img/theme/foto6.jpg)!important; height: 100%;"
@@ -445,11 +702,7 @@
       <div class="container pt-lg pb-300">
         <div class="row text-center justify-content-center">
           <div class="col-lg-10">
-            <h2
-              class="display-3"
-              style="font-size: 56px;
-    font-weight: 700; color: white;"
-            >
+            <h2 class="display-3">
               Cos'è Baccho
             </h2>
             <p class="lead text-white">
@@ -492,22 +745,17 @@
         </div>
       </div>
     </section>
-    <section class="section section-lg">
+    <section class="section section-lg seventhSezWeb">
       <div class="container">
         <div class="row row-grid justify-content-center">
           <div class="col-lg-8 text-center">
-            <h2
-              class="display-3"
-              style="font-size: 56px;
-    font-weight: 700;
-    color: #2b2b2b;"
-            >
+            <h2 class="display-3">
               Frutta &amp; verdura
               <span style="color: #b00a92; font-weight: 700;"
                 >per ristoranti e pizzerie</span
               >
             </h2>
-            <p class="lead" style="font-size: 20px; color: #666666;">
+            <p class="lead">
               Se sei un ristorante, una pizzeria o un locale privato, puoi
               ricevere i nostri prodotti tutti i giorni agli orari che
               preferisci, per iniziare clicca qui.
@@ -824,6 +1072,211 @@ export default {
   letter-spacing: -0.3px;
 }
 
+@media (max-width: 1023px) {
+  .riderDiv {
+    text-align: center;
+  }
+
+  .firstSezApp {
+    display: inherit;
+  }
+
+  .firstSezWeb {
+    display: none;
+  }
+
+  .thirdSezApp {
+    display: inherit;
+  }
+
+  .thirdSezWeb {
+    display: none;
+  }
+
+  .fourthSezApp {
+    display: inherit;
+    text-align: center;
+  }
+
+  .fourthSezWeb {
+    display: none;
+  }
+
+  .thirdSezDivApp {
+    text-align: center;
+  }
+
+  .thirdSezDivApp h3 {
+    font-size: 36px;
+  }
+
+  .thirdSezDivApp ul {
+    padding-left: 4rem !important;
+  }
+
+  .sixthSezWeb h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .sixthSezWeb h5 {
+    font-size: 18px;
+  }
+
+  .sixthSezWeb p {
+    font-size: 16px;
+    color: #666666;
+  }
+
+  .seventhSezWeb h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2b2b2b;
+  }
+
+  .seventhSezWeb p {
+    font-size: 16px;
+    color: #666666;
+  }
+
+  .firstSezApp .containerB {
+    padding: 3rem;
+    padding-top: 12rem !important;
+    max-width: none;
+    text-align: center;
+    padding-bottom: 0rem !important;
+  }
+
+  .containerB h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2b2b2b;
+  }
+
+  .containerB p {
+    font-size: 16px;
+    color: #666666;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .secondDefaultBtn {
+    display: none;
+  }
+
+  .image {
+    width: 30vh;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+    background-image: url("https://img.freepik.com/free-photo/top-view-healthy-food-immunity-boosting-composition_23-2148890265.jpg?t=st=1647900171~exp=1647900771~hmac=de141a782ec32899e152693d15527c1a00223fd4a877547b6f34cf868ddc8216&w=1380");
+  }
+}
+
+@media (min-width: 1024px) {
+  .firstSezApp {
+    display: none;
+  }
+
+  .firstSezWeb {
+    display: inherit;
+  }
+
+  .thirdSezWeb {
+    display: inherit;
+  }
+
+  .thirdSezApp {
+    display: none;
+  }
+
+  .fourthSezWeb {
+    display: inherit;
+  }
+
+  .fourthSezApp {
+    display: none;
+  }
+
+  .sixthSezWeb h2 {
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .seventhSezWeb h2 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #2b2b2b;
+  }
+
+  .seventhSezWeb p {
+    font-size: 20px;
+    color: #666666;
+  }
+
+  .containerB {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    max-width: none;
+  }
+
+  .containerB h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #2b2b2b;
+    line-height: 5rem;
+    width: 70%;
+  }
+
+  .containerB p {
+    font-size: 20px;
+    color: #666666;
+    width: 70%;
+    line-height: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .image {
+    width: 75vh;
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+    background-image: url("https://img.freepik.com/free-photo/top-view-healthy-food-immunity-boosting-composition_23-2148890265.jpg?t=st=1647900171~exp=1647900771~hmac=de141a782ec32899e152693d15527c1a00223fd4a877547b6f34cf868ddc8216&w=1380");
+  }
+
+  .image2 {
+    position: absolute;
+    top: 1%;
+    width: 25vh;
+    height: 25vh;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+    background-image: url("https://img.freepik.com/free-photo/buddha-bowl-dish-with-vegetables-legumes-top-view_1150-42597.jpg?t=st=1647900171~exp=1647900771~hmac=94135c1859627c18f495fd07f12d7310a0a1fe827f6962b5bf552b8fc81659c4&w=1380");
+  }
+
+  .image3 {
+    position: absolute;
+    top: 69%;
+    width: 25vh;
+    height: 25vh;
+    left: 71%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+    background-image: url("https://img.freepik.com/free-photo/top-view-assortment-vegetables-paper-bag_23-2148853335.jpg?w=1380");
+  }
+}
+
 .defaultBtn {
   background-color: #b00a92;
   border-color: #b00a92;
@@ -856,62 +1309,6 @@ export default {
   border: none;
   box-shadow: none;
   margin-left: 1rem;
-}
-
-.containerB {
-  padding-left: 10rem;
-  padding-right: 10rem;
-  max-width: none;
-}
-
-.containerB h1 {
-  font-size: 70px;
-  font-weight: 700;
-  color: #2b2b2b;
-  line-height: 5rem;
-  width: 70%;
-}
-
-.containerB p {
-  font-size: 20px;
-  color: #666666;
-  width: 70%;
-  line-height: 1.8rem;
-  margin-top: 1.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.image {
-  width: 75vh;
-  height: 75vh;
-  background-size: cover;
-  background-position: center;
-  border-radius: 25rem;
-  background-image: url("https://img.freepik.com/free-photo/top-view-healthy-food-immunity-boosting-composition_23-2148890265.jpg?t=st=1647900171~exp=1647900771~hmac=de141a782ec32899e152693d15527c1a00223fd4a877547b6f34cf868ddc8216&w=1380");
-}
-
-.image2 {
-  position: absolute;
-  top: 1%;
-  width: 25vh;
-  height: 25vh;
-  left: 0;
-  background-size: cover;
-  background-position: center;
-  border-radius: 25rem;
-  background-image: url("https://img.freepik.com/free-photo/buddha-bowl-dish-with-vegetables-legumes-top-view_1150-42597.jpg?t=st=1647900171~exp=1647900771~hmac=94135c1859627c18f495fd07f12d7310a0a1fe827f6962b5bf552b8fc81659c4&w=1380");
-}
-
-.image3 {
-  position: absolute;
-  top: 69%;
-  width: 25vh;
-  height: 25vh;
-  left: 71%;
-  background-size: cover;
-  background-position: center;
-  border-radius: 25rem;
-  background-image: url("https://img.freepik.com/free-photo/top-view-assortment-vegetables-paper-bag_23-2148853335.jpg?w=1380");
 }
 
 .cardImage {

@@ -70,7 +70,6 @@
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
           <a
-            style="padding-left: 0.7rem !important; padding-right: 0.7rem !important;"
             class="nav-link nav-link-icon"
             href="https://www.facebook.com/Baccho.It"
             target="_blank"
@@ -84,7 +83,6 @@
         </li>
         <li class="nav-item">
           <a
-            style="padding-left: 0.7rem !important; padding-right: 0.7rem !important;"
             class="nav-link nav-link-icon"
             href="https://www.instagram.com/baccho_it/"
             target="_blank"
@@ -131,12 +129,11 @@ export default {
 
   mounted() {
     var currentUrl = window.location.pathname;
-    console.log(this.$route.name);
     window.addEventListener("scroll", this.updateScroll);
-    if (this.$route.name == "about") {
+    /*if (this.$route.name == "about") {
       document.querySelector(".navbar-main").classList.remove("change_color2");
       document.querySelector(".navbar-main").classList.add("change_color");
-    }
+    }*/
   },
 
   methods: {
@@ -160,7 +157,6 @@ export default {
 
 @media (max-width: 1023px) {
   .navDefault {
-    background: white;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -168,8 +164,36 @@ export default {
     padding-right: 1rem;
   }
 
+  .change_color {
+    background-color: white;
+  }
+
+  .change_color2 {
+    background: transparent;
+  }
+
   .navbar-brand img {
     height: 60px;
+  }
+
+  .navbar-dark .navbar-toggler {
+    background: #b00a92;
+    border-radius: 25rem;
+    margin-top: 1rem;
+    margin-left: auto;
+  }
+
+  .dropdown-item.active,
+  .dropdown-item:active {
+    background-color: #b00a92;
+  }
+
+  .dropdown-menu .dropdown-item {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    margin: 0.5rem;
+    width: unset;
+    border-radius: 15px;
   }
 }
 
@@ -198,7 +222,7 @@ export default {
   }
 
   .nav-link:hover {
-    background: rgb(230 230 230 / 71%);
+    background: rgb(176 10 146 / 18%);
     color: rgb(31, 31, 31) !important;
     border-radius: 25rem;
   }
@@ -213,7 +237,7 @@ export default {
 
   .dropdown-item.active,
   .dropdown-item:active {
-    background-color: #71077b;
+    background-color: #b00a92;
   }
 
   .defaultBtn {

@@ -103,11 +103,36 @@ export default {
 };
 </script>
 <style>
-.container2 {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+@media (max-width: 1023px) {
+  .container2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .navbar-collapse.show {
+    border-radius: 15px !important;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+
+  .navbar-toggler-icon {
+    width: 1.3em !important;
+    height: 1.3em !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 </style>
