@@ -80,7 +80,7 @@
               </div>
               <div class="col-lg-6">
                 <h1 class="">
-                  Consengiamo la tua spesa genuina a
+                  Consegniamo la tua spesa genuina a
                   <span style="color: #b00a92;">casa</span>
                 </h1>
                 <p class="">
