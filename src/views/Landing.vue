@@ -91,7 +91,7 @@
                 <div class="btn-wrapper">
                   <base-button
                     tag="a"
-                    href="#ordinaFamiglia"
+                    href="#ordinaFamiglia2"
                     class="mb-3 mb-sm-0 defaultBtn"
                     icon="fa fa-plus"
                   >
@@ -114,6 +114,209 @@
       </section>
       <!-- 1st Hero Variation -->
     </div>
+
+    <section
+      class="section-shaped my-0 EasterSezWeb"
+      style="background: white;"
+    >
+      <div
+        class="shape shape-style-1 shape-default shape-skew"
+        style=" background-position: center; background: white;"
+      >
+        <span
+          style="background: transparent; width: 108%; height: 100%; border-radius: 0;"
+        ></span>
+      </div>
+      <div class="container shape-container d-flex containerB">
+        <div class="col px-0">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="">
+                Baccho c'è anche a
+                <span style="color: #b00a92;">Pasqua!</span>
+              </h1>
+              <p class="">
+                Ordina il cesto Baccho di Pasqua, per te o da regalare. Al suo
+                interno: Colomba Domori e Prosecco Ca’ rosa extra dry.
+              </p>
+
+              <p class="">
+                Prezzo
+                <span style="font-weight: 600; color: #b00a92;">€ 40</span>
+                con spedizione gratuita.
+              </p>
+
+              <h3 style="font-weight: 700;">
+                Ordina il cesto Baccho per Pasuqa
+                <span style="color: #b00a92;">qui</span>
+              </h3>
+              <div style="width: 80%;">
+                <base-input
+                  class=""
+                  placeholder="Nome e cognome"
+                  name="name2"
+                  v-model="name2"
+                >
+                </base-input>
+                <base-input placeholder="Email" name="email2" v-model="email2">
+                </base-input>
+                <base-input
+                  placeholder="Indirizzo di consegna e numero civico"
+                  name="address2"
+                  v-model="address2"
+                >
+                </base-input>
+                <base-input
+                  placeholder="Cellulare"
+                  name="cellular2"
+                  v-model="cellular2"
+                >
+                </base-input>
+
+                <base-input
+                  placeholder="Orario di consegna"
+                  type="time"
+                  name="time2"
+                  v-model="time2"
+                >
+                </base-input>
+                <base-input class="mb-4">
+                  <textarea
+                    class="form-control form-control-alternative"
+                    rows="4"
+                    cols="80"
+                    placeholder="Aggiungi ulteriori informazioni"
+                    name="note2"
+                    v-model="note2"
+                  ></textarea>
+                </base-input>
+                <base-button
+                  type="default defaultBtn"
+                  round
+                  block
+                  size="lg"
+                  @click="sendOrder_Easter"
+                >
+                  Conferma ordine
+                </base-button>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="image_1"
+                style="background-image: url(https://domori.com/3408-large_default/colomba-al-cioccolato-domori-1-kg.jpg);"
+              ></div>
+              <div
+                class="image_2"
+                style="background-image: url(https://mtfn-assets.s3.eu-central-1.amazonaws.com/baccho/chest.jpg);"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section-shaped my-0 EasterSezApp"
+      style="background: white;"
+    >
+      <div
+        class="shape shape-style-1 shape-default shape-skew"
+        style=" background-position: center; background: white;"
+      >
+        <span
+          style="background: transparent; width: 108%; height: 100%; border-radius: 0;"
+        ></span>
+      </div>
+      <div class="container shape-container d-flex containerB">
+        <div class="col px-0">
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                class="image_1"
+                style="background-image: url(https://domori.com/3408-large_default/colomba-al-cioccolato-domori-1-kg.jpg);"
+              ></div>
+              <div
+                class="image_2"
+                style="background-image: url(https://mtfn-assets.s3.eu-central-1.amazonaws.com/baccho/chest.jpg);"
+              ></div>
+            </div>
+            <div class="col-lg-6" style="text-align: center;">
+              <h1 class="">
+                Baccho c'è anche a
+                <span style="color: #b00a92;">Pasqua!</span>
+              </h1>
+              <p class="">
+                Ordina il cesto Baccho di Pasqua, per te o da regalare. Al suo
+                interno: Colomba Domori e Prosecco Ca’ rosa extra dry.
+              </p>
+
+              <p class="">
+                Prezzo
+                <span style="font-weight: 600; color: #b00a92;">€ 40</span>
+                con spedizione gratuita.
+              </p>
+
+              <h3 style="font-weight: 700;">
+                Ordina il cesto Baccho per Pasuqa
+                <span style="color: #b00a92;">qui</span>
+              </h3>
+              <div>
+                <base-input
+                  class=""
+                  placeholder="Nome e cognome"
+                  name="name2"
+                  v-model="name2"
+                >
+                </base-input>
+                <base-input placeholder="Email" name="email2" v-model="email2">
+                </base-input>
+                <base-input
+                  placeholder="Indirizzo di consegna e numero civico"
+                  name="address2"
+                  v-model="address2"
+                >
+                </base-input>
+                <base-input
+                  placeholder="Cellulare"
+                  name="cellular2"
+                  v-model="cellular2"
+                >
+                </base-input>
+
+                <base-input
+                  placeholder="Orario di consegna"
+                  type="time"
+                  name="time2"
+                  v-model="time2"
+                >
+                </base-input>
+                <base-input class="mb-4">
+                  <textarea
+                    class="form-control form-control-alternative"
+                    rows="4"
+                    cols="80"
+                    placeholder="Aggiungi ulteriori informazioni"
+                    name="note2"
+                    v-model="note2"
+                  ></textarea>
+                </base-input>
+                <base-button
+                  type="default defaultBtn"
+                  round
+                  block
+                  size="lg"
+                  @click="sendOrder_Easter"
+                >
+                  Conferma ordine
+                </base-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-lg pt-lg-0 mt--200">
       <div class="containerB" style="margin-top: 3rem;">
         <div class="row justify-content-center">
@@ -389,7 +592,7 @@
                       ></badge>
                       <h6 class="mb-0 text-white">
                         Costo di spedizone di €2,50 per gli ordini inferiori a
-                        €20.
+                        €25.
                       </h6>
                     </div>
                   </li>
@@ -508,7 +711,7 @@
 
     <section
       class="section section section-shaped my-0 overflow-hidden fourthSezApp"
-      id="ordinaFamiglia"
+      id="ordinaFamiglia2"
     >
       <div
         class="shape shape-style-1 bg-gradient-warning shape-skew"
@@ -543,7 +746,7 @@
                     <div class="align-items-center">
                       <h6 class="mb-0 text-white">
                         Costo di spedizone di €2,50 per gli ordini inferiori a
-                        €20.
+                        €25.
                       </h6>
                     </div>
                   </li>
@@ -1044,6 +1247,13 @@ export default {
       time1: "",
       note1: "",
       sum1: "",
+
+      name2: "",
+      email2: "",
+      cellular2: "",
+      address2: "",
+      time2: "",
+      note2: "",
     };
   },
   mounted() {
@@ -1111,6 +1321,51 @@ export default {
           });
         });
     },
+
+    sendOrder_Easter() {
+      const current = new Date();
+      const date =
+        current.getDate() +
+        "-" +
+        (current.getMonth() + 1) +
+        "-" +
+        current.getFullYear();
+      const time =
+        current.getHours() +
+        ":" +
+        current.getMinutes() +
+        ":" +
+        current.getSeconds();
+      const dateTime = date + " " + time;
+      const db = firebase
+        .initializeApp({ projectId: "baccho-86489" })
+        .firestore();
+      const order = {
+        name: this.name2,
+        email: this.email2,
+        cellular: this.cellular2,
+        address: this.address2,
+        time: this.time2,
+        date: dateTime,
+        note: this.note2,
+        sum: "€ 40",
+      };
+
+      db.collection("orders_easter")
+        .add(order)
+        .then(() => {
+          this.$router.push({
+            path: "/ordercomplete",
+            query: {
+              elem1: this.name2,
+              elem2: this.address2,
+              elem3: "€ 40",
+              elem4: "Cesto Baccho per Pasqua",
+              elem5: this.cellular2,
+            },
+          });
+        });
+    },
   },
 };
 </script>
@@ -1136,6 +1391,14 @@ export default {
 
   .firstSezWeb {
     display: none;
+  }
+
+  .EasterSezWeb {
+    display: none;
+  }
+
+  .EasterSezApp {
+    display: inherit;
   }
 
   .thirdSezApp {
@@ -1229,6 +1492,28 @@ export default {
     border-radius: 25rem;
     background-image: url("https://img.freepik.com/free-photo/top-view-healthy-food-immunity-boosting-composition_23-2148890265.jpg?t=st=1647900171~exp=1647900771~hmac=de141a782ec32899e152693d15527c1a00223fd4a877547b6f34cf868ddc8216&w=1380");
   }
+
+  .image_1 {
+    width: 30vh;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+  }
+
+  .image_2 {
+    width: 30vh;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1238,6 +1523,14 @@ export default {
 
   .firstSezWeb {
     display: inherit;
+  }
+
+  .EasterSezWeb {
+    display: inherit;
+  }
+
+  .EasterSezApp {
+    display: none;
   }
 
   .thirdSezWeb {
@@ -1294,6 +1587,25 @@ export default {
     line-height: 1.8rem;
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
+  }
+
+  .image_1 {
+    width: 75vh;
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+  }
+
+  .image_2 {
+    position: absolute;
+    top: 0%;
+    width: 35vh;
+    height: 35vh;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
   }
 
   .image {

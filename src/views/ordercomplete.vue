@@ -43,10 +43,14 @@
 
                       <p>{{ $route.query.elem5 }}</p>
                       <p>{{ $route.query.elem3 }}</p>
-                      <div class="">
+                      <div class="" v-if="products != []">
                         <div v-for="product in products" v-bind:key="product">
                           <p class="productname">{{ product.name }}</p>
                         </div>
+                      </div>
+
+                      <div class="">
+                        <p class="productname">{{ this.product1 }}</p>
                       </div>
                     </div>
                   </div>
@@ -54,7 +58,7 @@
                 <div class="btn-wrapper">
                   <base-button
                     tag="a"
-                    href="#ordina"
+                    href="/"
                     class="mb-3 mb-sm-0 defaultBtn"
                     icon="fa fa-plus"
                   >
@@ -117,10 +121,14 @@
                       <p>{{ $route.query.elem5 }}</p>
                       <p>{{ $route.query.elem3 }}</p>
 
-                      <div class="">
+                      <div class="" v-if="products != []">
                         <div v-for="product in products" v-bind:key="product">
                           <p class="productname">{{ product.name }}</p>
                         </div>
+                      </div>
+
+                      <div class="">
+                        <p class="productname">{{ this.product1 }}</p>
                       </div>
                     </div>
                   </div>
@@ -180,6 +188,7 @@ export default {
   data() {
     return {
       products: [],
+      product1: "",
       value: [],
       options: [
         { name: "1 pezzo pane di gragnano", price: "€1.80" },
@@ -404,7 +413,12 @@ export default {
     };
   },
   mounted() {
-    this.products = this.$route.query.elem4;
+    if (Array.isArray(this.$route.query.elem4) == true) {
+      this.products = this.$route.query.elem4;
+    } else {
+      this.product1 = this.$route.query.elem4;
+      console.log(this.product1);
+    }
   },
   methods: {
     customLabel({ name, price }) {

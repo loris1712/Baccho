@@ -37,6 +37,7 @@
           inputClasses,
         ]"
         aria-describedby="addon-right addon-left"
+        required
       />
     </slot>
     <div v-if="addonRightIcon || $slots.addonRight" class="input-group-append">
