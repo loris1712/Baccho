@@ -10,7 +10,7 @@
             Iscriviti alla newsletter.
           </h4>
         </div>
-        <div class="col-lg-6 text-lg-center btn-wrapper">
+        <div class="col-lg-6 text-lg-center btn-wrapper fieldsNewsletter">
           <base-input
             placeholder="Inserisci la tua email"
             name="email"
@@ -26,6 +26,9 @@
           >
             Iscriviti
           </base-button>
+        </div>
+        <div class="col-lg-6 text-lg-center btn-wrapper confirmedNewsletter">
+          <p>Grazie per esserti iscritto!</p>
         </div>
       </div>
       <hr />
@@ -102,7 +105,16 @@ export default {
 
       db.collection("newsletter")
         .add(order)
-        .then(() => {});
+        .then(() => {
+          document.querySelector(".fieldsNewsletter").style.visibility =
+            "hidden";
+          document.querySelector(".fieldsNewsletter").style.opacity = 0;
+          document.querySelector(".fieldsNewsletter").style.display = "none";
+
+          document.querySelector(".confirmedNewsletter").style.visibility =
+            "visible";
+          document.querySelector(".confirmedNewsletter").style.opacity = 1;
+        });
     },
   },
 };
@@ -165,5 +177,10 @@ a:hover {
 
 .copyright {
   color: #2b2b2b !important;
+}
+
+.confirmedNewsletter {
+  opacity: 0;
+  visibility: hidden;
 }
 </style>

@@ -5,6 +5,7 @@ import AppFooter from "./layout/AppFooter";
 import Components from "./views/Components.vue";
 import Landing from "./views/Landing.vue";
 import locals from "./views/locals.vue";
+import ordercomplete from "./views/ordercomplete.vue";
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
@@ -21,8 +22,8 @@ export default new Router({
       components: {
         header: AppHeader,
         default: Landing,
-        footer: AppFooter
-      }
+        footer: AppFooter,
+      },
     },
     {
       path: "/locals",
@@ -30,8 +31,17 @@ export default new Router({
       components: {
         header: AppHeader,
         default: locals,
-        footer: AppFooter
-      }
+        footer: AppFooter,
+      },
+    },
+    {
+      path: "/ordercomplete",
+      name: "ordercomplete",
+      components: {
+        header: AppHeader,
+        default: ordercomplete,
+        footer: AppFooter,
+      },
     },
     {
       path: "/about",
@@ -39,8 +49,8 @@ export default new Router({
       components: {
         header: AppHeader,
         default: about,
-        footer: AppFooter
-      }
+        footer: AppFooter,
+      },
     },
     {
       path: "/login",
@@ -48,8 +58,8 @@ export default new Router({
       components: {
         header: AppHeader,
         default: Login,
-        footer: AppFooter
-      }
+        footer: AppFooter,
+      },
     },
     {
       path: "/register",
@@ -57,8 +67,8 @@ export default new Router({
       components: {
         header: AppHeader,
         default: Register,
-        footer: AppFooter
-      }
+        footer: AppFooter,
+      },
     },
     {
       path: "/profile",
@@ -66,15 +76,15 @@ export default new Router({
       components: {
         header: AppHeader,
         default: Profile,
-        footer: AppFooter
-      }
-    }
+        footer: AppFooter,
+      },
+    },
   ],
-  scrollBehavior: to => {
+  scrollBehavior: (to) => {
     if (to.hash) {
       return { selector: to.hash };
     } else {
       return { x: 0, y: 0 };
     }
-  }
+  },
 });
