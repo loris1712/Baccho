@@ -99,7 +99,7 @@
                   </base-button>
                   <base-button
                     tag="a"
-                    href="#ordinaFamiglia"
+                    href="#ordinaFamiglia2"
                     class="mb-3 mb-sm-0 secondDefaultBtn"
                     type="white"
                     icon="fa fa-info"
@@ -142,7 +142,7 @@
 
               <p class="">
                 Prezzo
-                <span style="font-weight: 600; color: #b00a92;">€ 40</span>
+                <span style="font-weight: 600; color: #b00a92;">€ 50</span>
                 con spedizione gratuita.
               </p>
 
@@ -253,7 +253,7 @@
 
               <p class="">
                 Prezzo
-                <span style="font-weight: 600; color: #b00a92;">€ 40</span>
+                <span style="font-weight: 600; color: #b00a92;">€ 50</span>
                 con spedizione gratuita.
               </p>
 
