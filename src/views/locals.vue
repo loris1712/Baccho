@@ -85,7 +85,7 @@
                 <div class="btn-wrapper">
                   <base-button
                     tag="a"
-                    href="#ordinaFamiglia"
+                    href="#ordina"
                     class="mb-3 mb-sm-0 defaultBtn"
                     icon="fa fa-plus"
                   >
@@ -93,7 +93,7 @@
                   </base-button>
                   <base-button
                     tag="a"
-                    href="#ordinaFamiglia"
+                    href="#ordina"
                     class="mb-3 mb-sm-0 secondDefaultBtn"
                     type="white"
                     icon="fa fa-info"
@@ -109,7 +109,7 @@
       <!-- 1st Hero Variation -->
     </div>
 
-    <section class="section section-lg">
+    <section class="section section-lg" id="ordina">
       <div class="container">
         <div class="row row-grid">
           <div class="col-md-6 order-md-2">
@@ -597,31 +597,31 @@ export default {
         { name: "3 kg Zucca", price: "€3.30" },
         { name: "4 kg Zucca", price: "€4.40" },
         { name: "5 kg Zucca", price: "€5.50" },
-        { name: "1 kg Cicoria coltivata", price: "€1.65" },
-        { name: "2 kg Cicoria coltivata", price: "€3.30" },
-        { name: "3 kg Cicoria coltivata", price: "€4.95" },
-        { name: "4 kg Cicoria coltivata", price: "€6.60" },
-        { name: "5 kg Cicoria coltivata", price: "€8.25" },
-        { name: "1 kg Arance tarocchi", price: "€1.65" },
-        { name: "2 kg Arance tarocchi", price: "€3.30" },
-        { name: "3 kg Arance tarocchi", price: "€4.95" },
-        { name: "4 kg Arance tarocchi", price: "€6.60" },
-        { name: "5 kg Arance tarocchi", price: "€8.25" },
+        { name: "1 kg Cicoria coltivata", price: "€1.60" },
+        { name: "2 kg Cicoria coltivata", price: "€3.20" },
+        { name: "3 kg Cicoria coltivata", price: "€4.80" },
+        { name: "4 kg Cicoria coltivata", price: "€6.40" },
+        { name: "5 kg Cicoria coltivata", price: "€8.00" },
+        { name: "1 kg Arance tarocchi", price: "€1.60" },
+        { name: "2 kg Arance tarocchi", price: "€3.20" },
+        { name: "3 kg Arance tarocchi", price: "€4.80" },
+        { name: "4 kg Arance tarocchi", price: "€6.40" },
+        { name: "5 kg Arance tarocchi", price: "€8.00" },
         { name: "1 kg Mandaranci", price: "€2.20" },
         { name: "2 kg Mandaranci", price: "€4.40" },
         { name: "3 kg Mandaranci", price: "€6.60" },
         { name: "4 kg Mandaranci", price: "€8.80" },
         { name: "5 kg Mandaranci", price: "€11.00" },
-        { name: "1 pezzo Fragole", price: "€1.43" },
-        { name: "2 pezzi Fragole", price: "€2.86" },
-        { name: "3 pezzi Fragole", price: "€4.29" },
-        { name: "4 pezzi Fragole", price: "€5.72" },
-        { name: "5 pezzi Fragole", price: "€7.15" },
-        { name: "1 kg Fave", price: "€2.75" },
-        { name: "2 kg Fave", price: "€5.50" },
-        { name: "3 kg Fave", price: "€8.25" },
-        { name: "4 kg Fave", price: "€11.00" },
-        { name: "5 kg Fave", price: "€13.75" },
+        { name: "1 pezzo Fragole", price: "€1.40" },
+        { name: "2 pezzi Fragole", price: "€2.80" },
+        { name: "3 pezzi Fragole", price: "€4.20" },
+        { name: "4 pezzi Fragole", price: "€5.60" },
+        { name: "5 pezzi Fragole", price: "€7.00" },
+        { name: "1 kg Fave", price: "€2.70" },
+        { name: "2 kg Fave", price: "€5.40" },
+        { name: "3 kg Fave", price: "€8.10" },
+        { name: "4 kg Fave", price: "€10.80" },
+        { name: "5 kg Fave", price: "€13.50" },
         { name: "1 kg Arance dolci maltesi", price: "€1.10" },
         { name: "2 kg Arance dolci maltesi", price: "€2.20" },
         { name: "3 kg Arance dolci maltesi", price: "€3.30" },
